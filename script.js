@@ -10,8 +10,8 @@ function compute()
     result = p*(1+(r*t)/100)-p;
   
  y1 =  Number(t) + 2022;       
- document.getElementById("result").innerHTML = "if you deposit <mark>"+ p +"</mark><br> at an interest rate of <mark>"+r+" %</mark><br> "
- +"You will receive an amount of <mark>"+ result +"</mark>,<br/> in the year <mark>" + y1+"</mark>";
+document.getElementById("result").innerHTML = "if you deposit <mark>"+ p +"</mark><br> at an interest rate of <mark>"+r+" %</mark><br> "
++"You will receive an amount of <mark>"+ result +"</mark>,<br/> in the year <mark>" + y1+"</mark>";
 return 0;}
 }
  
