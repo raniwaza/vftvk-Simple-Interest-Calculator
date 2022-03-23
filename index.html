@@ -4,13 +4,32 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+      <div>
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <label>Amount</label>
+         <input type="number"  id="principal">  <br/>
 
-        <button onclick="compute()">Compute</button>
+       <label> Interest Rate </label>
+        <input type="range"  id="rate" min="0" max="30" step="0.1" oninput="this.nextElementSibling.value = this.value" > <output>15</output> <br/>
+      
+      <label>  No. of Years</label> <input list="number-of-years"  id="years">  <br/>
+        <datalist id="number-of-years">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+        </datalist>
+        <button onclick="compute()">Compute Interest</button><br>
+        <span id="result"></span><br>
+        <span>Ⓒ Everyone Can Get Rich</span>
+        
     </body>
 </html>
+
