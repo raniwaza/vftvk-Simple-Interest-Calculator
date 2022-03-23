@@ -1,7 +1,11 @@
 function compute()
 {
     p = document.getElementById("principal").value;
-    if (p<1){alert("please insert a greater than 0");}
+    
+    if (p<1){
+            alert("please insert a greater than 0");
+           document.getElementById("principal").focus();
+             }
   else{
     r = document.getElementById("rate").value;
     t = document.getElementById("years").value;
