@@ -1,6 +1,8 @@
 function compute()
 {
     p = document.getElementById("principal").value;
+    if (p<1){alert("please insert a greater than 0");}
+  else{
     r = document.getElementById("rate").value;
     t = document.getElementById("years").value;
     result = p*(1+(r*t)/100)-p;
@@ -9,5 +11,6 @@ function compute()
 document.getElementById("result").innerHTML = "if you deposit "+ p +"<br> at an interest rate of "+r+"% <br> "
 +"You will receive an amount of "+ result +" in the year " + y1;
 return 0;
+}
 }
  
